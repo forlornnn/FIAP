@@ -1,0 +1,41 @@
+CSS- CASCADE STYLE SHEET
+INICIO 1994- HAKON WIUM
+
+1996 - FOI LANÇADO CSS2
+2012 - FOI LANÇADO O CSS3 
+
+INLINE- NUNCA USAR
+INTERNA -NÃO É BOA PRATÍCA(NÃO USAR)
+EXTERNA -O QUE O MERCADO UTILIZA
+
+
+Estrutura para criar um projeto
+
+-src
+  -assets
+  -css
+    estilo.css
+  -js
+    script.js
+index.html
+
+seletor {
+
+   propriedade:valor;
+
+} bloco
+
+exemplo:
+
+body {
+  color:red;
+}
+
+ID E CLASS 
+
+id = # (individual)
+class= . (coletivo)
+
+
+
+

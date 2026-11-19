@@ -1,0 +1,18 @@
+{
+  "name": "node.js-typescript---fase4-cap02",
+  "version": "1.0.0",
+  "description": "Testando NPM para instalação de pacotes ",
+  "license": "ISC",
+  "author": "Felipe",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

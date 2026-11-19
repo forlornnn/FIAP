@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução TailwindCSS</title>
+
+    <!-- Linkando CSS com o tailwind CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body class="font-quicksand text-lg">
+
+    <h1 class="text-blue-700 font-extrabold text-6xl text-center">Testando TailwindCSS</h1>
+    <!-- para colocar um valora arbitrario usar "-[]" -->
+    <p class="text-[#030447] font-sans">sit amet consectetur <span class="text-[#f60000]"> adipisicing elit. Explicabo
+            tempora harum obcaecati iure</span> voluptate reiciendis aitis error!</p>
+    <p class="text-[#030447] font-mono">Lorem, ipsu <span class="text-[#f60000]"> adipisicing elit. Explicabo tempora
+            harum obcaecati iure, dolore eos p</span> voimda ipid, sapiente? Eligendi laboriosam debitis error!</p>
+    <p class="text-[#030447] font-serif">Lorem, i consectetur <span class="text-[#f60000]"> a harum obcaecati iure,
+            dolore eos provident error pariatur</span> voluptate reiciendis animi illum? Eligendi laboriosam debitis
+        error!</p>
+    <p class="text-[#030447] font-quicksand">Lorem, amet consectetur <span class="text-[#f60000]"> adExplicabo tempora
+            harum obcaecati iure, dolore eos proviriatur</span> da ipsa! Aliquid, sapiente? Eligendi laboriosam debitis
+        error!</p>
+    <a href="" class="text-red-600 underline font-extrabold decoration-wavy underline-offset-4">Mais Informações</a>
+
+    <div class="max-w-sm mx-auto mt-10 border border-gray-400 rounded-2xl shadow-lg p-3">
+        <img src="./images/goatzao.webp" alt="Kanye West" class="w-full rounded-2xl h-32 mb-7">
+        <h2 class="font-extrabold text-2xl text-center mb-3">Kanye West</h2>
+        <p class="text-gray-600 font-medium mb-3">O maior rapper da atualidade, tem grandes albuns com alta qualidade de
+            som</p>
+        <a href="#"
+            class="text-red-600 text-2xl font-extrabold bg-blue-600 p-4 text-center block underline rounded-2xl">Saiba
+            Mais</a>
+    </div>
+
+    <!-- Aplicando um gradrient -->
+    <section class="bg-linear-to-r from-indigo-600 to bg-red-600 p-20 text-white text-center mb-6">
+        <h1 class="text-5xl font-extrabold mb-5">Musica esta em tudo hoje em dia</h1>
+        <p class="text-lg mb-15 font-bold">Um ramo tão profundo e interessante como o mundo da musica</p>
+        <a href="" class="border bg-linear-to-r from-red-600 to-indigo-950 rounded-4xl p-6 font-extrabold">Comece agora
+            com a SUA musica</a>
+    </section>
+    <!-- tentando colocar imagem de fundo pqp -->
+    <section
+        class="relative w-11/13 h-[85dvh] mx-auto my-6 border-2 border-gray-700 rounded-lg overflow-hidden bg-[url('../images/francisco_oceano.jpg')] bg-cover bg-center">
+
+        <!-- O gradiente transparente por cima da imagem -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 to-transparent"></div>
+
+        <!-- O conteúdo da section -->
+        <div class="relative z-10 h-full p-5 content-end">
+            <h1 class="text-gray-400 font-extrabold text-3xl uppercase">FRANK OCEAN</h1>
+        </div>
+    </section>
+
+    <!-- usando flex -->
+    <section class="w-11/12  mx-auto my-3 p-2 flex justify-evenly items-center gap-5 mb-8">
+        <a href="" class="border-2 border-slate-200 rounded-tl-lg rounded-tr-lg overflow-hidden w-[70dvh] min-h-[70dvh] hover:bg-gray-200 duration-300">
+            <img src="./images/passeio1.jpg" alt="Balões voando sobre as montanhas" class="w-full">
+            <div class="flex items-center flex-col my-5 gap-4 p-2">
+                <h3 class="font-bold text-slate-700 text-2xl">Fortaleza de Ferro</h3>
+                <p class="font-bold text-slate-500">Português disponível - 03 diárias</p>
+                <p class="font-bold text-2xl text-rose-700">R$ 7.800</p>
+            </div>
+        </a>
+        <a href="" class="border-2 border-slate-200 rounded-tl-lg rounded-tr-lg overflow-hidden w-[70dvh] min-h-[70dvh] hover:bg-gray-200 duration-300">
+            <img src="./images/passeio2.jpg" alt="Balões voando para assistir o nascer do Sol" class="w-full">
+            <div class="flex items-center flex-col my-5 gap-4 p-2">
+                <h3 class="font-bold text-slate-700 text-2xl">Castelo de Drangleic</h3>
+                <p class="font-bold text-slate-500">Português disponível - 04 diárias</p>
+                <p class="font-bold text-2xl text-rose-700">R$ 8.700</p>
+            </div>
+        </a>
+        <a href="" class="border-2 border-slate-200 rounded-tl-lg rounded-tr-lg overflow-hidden w-[70dvh] min-h-[70dvh] hover:bg-gray-200 duration-300">
+            <img src="./images/passeio3.webp" alt=" Balões voando para assistir o pôr do Sol " class="w-full">
+            <div class="flex items-center flex-col my-5 gap-4 p-2">
+                <h3 class="font-bold text-slate-700 text-2xl">Inferno</h3>
+                <p class="font-bold text-slate-500">Português disponível - 05 diárias</p>
+                <p class="font-bold text-2xl text-rose-700">R$ 9.800</p>
+            </div>
+        </a>
+    </section>
+
+    <!-- usando grid -->
+
+    <section class="grid grid-cols-3 mx-auto w-11/12 p-2 gap-2">
+        <div class=" col-span-2 row-span-2"><img class="rounded-4xl w-full h-full" src="./images/grid6.jpg" alt="#">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid2.jpg" alt="">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid3.jpg" alt="">
+        </div>
+    </section>
+    <section class="grid grid-cols-6 mx-auto w-11/12 p-2 gap-2">
+        <div><img class="rounded-4xl w-full" src="./images/grid4.jpg" alt="">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid5.jpg" alt="">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid1.jpg" alt="">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid6.jpg" alt="">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid8.jpg" alt="">
+        </div>
+        <div><img class="rounded-4xl w-full" src="./images/grid5.jpg" alt="">
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+FIAP // CITIZENTECH STUDIO — GS 2026.2
+Curso: Engenharia de Software
+Conteúdos: Full Stack, Inteligência Artificial (IA), Automação
+Interesses: Música, Fotografia, Arte
+Problemas: Resíduos e reciclagem
+Formatos: App ou plataforma, Assistente com IA
+
+IDEIA 1: Viva Música
+Problema: Descarte inadequado e cadeias pouco conectadas
+Solução: Uma app ou plataforma que conecte música ao desafio de resíduos e reciclagem, criando formas simples de descobrir necessidades, registrar evidências e apoiar decisões da comunidade.
+Público: Pessoas afetadas por resíduos e reciclagem, priorizando quem enfrenta maiores barreiras de acesso.
+Tecnologia: Comece com full stack e avalie como app ou plataforma pode funcionar em condições reais de custo, acessibilidade e conectividade.
+Hipótese: Hipótese inicial (a validar): pessoas ligadas a música podem ajudar a observar ou resolver parte do problema de resíduos e reciclagem.
+MVP: Entreviste 5 pessoas afetadas; mapeie uma jornada real; prototipe a principal funcionalidade; teste com 3 usuários e registre o que mudou.
+Impacto: Indicadores possíveis: tempo economizado, redução de perdas, acesso ampliado, satisfação e número de pessoas beneficiadas — selecione apenas os pertinentes ao problema.
+Ecossistema: Comunidade afetada, organizações locais, especialistas no tema e possíveis parceiros de implantação.
+ODS: 11,12
+
+IDEIA 2: Ponte Fotografia
+Problema: Descarte inadequado e cadeias pouco conectadas
+Solução: Uma iniciativa de assistente com ia para aproximar pessoas ligadas a fotografia de oportunidades locais de enfrentamento de resíduos e reciclagem.
+Público: Pessoas afetadas por resíduos e reciclagem, priorizando quem enfrenta maiores barreiras de acesso.
+Tecnologia: Comece com inteligência artificial (ia) e avalie como assistente com ia pode funcionar em condições reais de custo, acessibilidade e conectividade.
+Hipótese: Hipótese inicial (a validar): pessoas ligadas a fotografia podem ajudar a observar ou resolver parte do problema de resíduos e reciclagem.
+MVP: Entreviste 5 pessoas afetadas; mapeie uma jornada real; prototipe a principal funcionalidade; teste com 3 usuários e registre o que mudou.
+Impacto: Indicadores possíveis: tempo economizado, redução de perdas, acesso ampliado, satisfação e número de pessoas beneficiadas — selecione apenas os pertinentes ao problema.
+Ecossistema: Comunidade afetada, organizações locais, especialistas no tema e possíveis parceiros de implantação.
+ODS: 11,12
+
+IDEIA 3: Rede Arte
+Problema: Descarte inadequado e cadeias pouco conectadas
+Solução: Uma experiência de app ou plataforma que use automação para dar visibilidade a barreiras em resíduos e reciclagem e mobilizar soluções inclusivas.
+Público: Pessoas afetadas por resíduos e reciclagem, priorizando quem enfrenta maiores barreiras de acesso.
+Tecnologia: Comece com automação e avalie como app ou plataforma pode funcionar em condições reais de custo, acessibilidade e conectividade.
+Hipótese: Hipótese inicial (a validar): pessoas ligadas a arte podem ajudar a observar ou resolver parte do problema de resíduos e reciclagem.
+MVP: Entreviste 5 pessoas afetadas; mapeie uma jornada real; prototipe a principal funcionalidade; teste com 3 usuários e registre o que mudou.
+Impacto: Indicadores possíveis: tempo economizado, redução de perdas, acesso ampliado, satisfação e número de pessoas beneficiadas — selecione apenas os pertinentes ao problema.
+Ecossistema: Comunidade afetada, organizações locais, especialistas no tema e possíveis parceiros de implantação.
+ODS: 11,12
+
+Lembre-se: hipóteses devem ser validadas em campo.

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascriptooo</title>
+</head>
+<body>
+    
+<script>
+    var nomeTurista;
+var valor;
+nomeTurista = prompt("Olá! Qual seu nome?");
+valor = Number(prompt("Quanto você traz em dinheiro?"));
+if (valor > 10){
+    console.log("Aproveite os Quiosques de água de coco"); 
+}
+else{
+console.log("Prestigie as barracas de artesanato");
+}
+console.log("Bom passeio");
+
+var combo = prompt("Qual o combo desejado?");
+switch(combo){
+  case "1":
+      alert("Hamburguer, Refri e Fritas. R$ 20,00");
+      break;
+  case "2":
+      alert("Chesseburger, Refri e Salada. R$ 22,00");
+      break;
+  case "3":
+      alert("Misto Quente, Suco e Salada. R$ 15,00");
+      break;
+   default:
+      alert("Opção inválida");
+}
+
+
+
+</script>
+
+</body>
+</html>

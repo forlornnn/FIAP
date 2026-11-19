@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <script>
+
+        // STRINGS
+
+        var palavra = "javascript, Linguagem muito utilizada hj em dia Linguagem muito utilizada hj em dia Linguagem muito utilizada hj em dia Linguagem muito utilizada hj em dia Linguagem muito utilizada hj em dia Linguagem muito utilizada hj em dia"
+        var string1 = "A programação é algo"
+        var string2 = " incrivel, feliz e legal"
+        var juncao = string1 + string2
+
+        console.log(juncao);
+        
+        var aspas2 = "Usando aspas duplas"
+        console.log(aspas2);
+        var aspas1 = 'Usando apenas uma aspa'
+        console.log(aspas1)
+        var crase = `Usando crase, teste, da pra 
+        quebrar o 
+        texto com crase`
+        console.log(crase);
+
+        // METODOS DE BUSCA, mostra quantos caracteres tem do começo ate chegar na palavra da busca
+        var busca = palavra.search("Linguagem")
+        console.log(busca)
+
+        var busca1 = palavra.indexOf("Linguagem")
+        console.log(busca1)
+
+        var busca2 = palavra.indexOf("Linguagem", 13)
+        console.log(busca2)
+
+        var busca3 = palavra.indexOf("Linguagem", 49)
+        console.log(busca3);
+
+        var inicio = palavra.startsWith("JavaScript")
+        console.log(inicio);
+
+        var inicio2 = palavra.startsWith("javascript")
+        console.log(inicio2);
+
+        var final = palavra.endsWith("dia")
+        console.log(final);
+        
+        var trecho = palavra.substring(0 , 80)
+        console.log(trecho);
+
+        var trecho2 = palavra.substr(10, 20)
+        console.log(trecho2);
+
+        // ARRAY 
+        var jogos = "Dark Souls, Resident Evil, Silent Hill, Minecraft"
+        var lista = jogos.split(',')
+        console.log(lista);
+
+        console.log(lista[0]);
+
+        // SUBSTITUINDO TRECHOS
+
+        var informacoes = "O player, de RG: NumRG, CPF: NumCPF, platina muitos jogos"
+        var rg = prompt ("Qual seu RG? ")
+        var cpf = prompt ("Qual seu CPF? ")
+        var nome = prompt ("Qual seu nome? ")
+        var todasinfo = informacoes.replace("player", nome).replace("NumRG", rg).replace("NumCPF", cpf)
+
+       console.log(todasinfo);
+
+       var novasinformacoes = `O ${nome}, de RG: ${rg}, CPF: ${cpf}, platina muitos jogos`
+       console.log(novasinformacoes);
+       
+       
+        
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>

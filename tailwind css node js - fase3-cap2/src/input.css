@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
+/* PRA ADICIONAR COISA PROPRIA USA O "@THEME" */
+@theme {
+    --color-fiap : #dc143c;
+    --font-quicksand : 'Quicksand';
+}
+
