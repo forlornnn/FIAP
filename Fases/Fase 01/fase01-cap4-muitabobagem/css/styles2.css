@@ -1,0 +1,32 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-body: Quicksand;
+    --color-crimsom: #dc143c;
+    --color-slate-900: rgb(15, 23, 43);
+}
+
+body {
+    background-color: var(--color-slate-900) ;
+    font-family: var(--font-body);
+}
+
+.box {
+    margin: 10px;
+    border: 5px solid var(--color-crimsom);
+    width: 200px;
+    min-height: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.jojo {
+    padding: 30px;
+}

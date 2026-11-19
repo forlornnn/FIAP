@@ -1,0 +1,61 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-body: Quicksand;
+    --color-light: #fcfcfc;
+    --color-slate-900: rgb(17, 35, 80);
+    --colo-blue-200: rgb(142, 197, 255)
+}
+
+body {
+    color: var(--color-light);
+    font-family: var(--font-body);
+}
+
+table {
+    background-color: var(--color-slate-900);
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+
+}
+
+caption {
+    color: var(--color-slate-900);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+thead tr,tfoot tr {
+    color: var(--colo-blue-200);
+}
+
+th,td {
+    width: 25%;
+    padding: 1rem;
+}
+
+thead tr,tbody tr {
+    border-bottom: 1px solid var(--colo-blue-200);
+}
+
+tbody tr:hover {
+    color: var(--colo-blue-200);
+    cursor: pointer;
+}
+
+tfoot {
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+    
+}

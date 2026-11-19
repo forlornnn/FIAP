@@ -1,0 +1,45 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: #fcfcfc;
+    --color-slate-900: rgb(15, 23, 43);
+    --color-lightblue: #2b63f3;
+}
+
+body {
+    font-family: var(--font-body, monospace);
+    background-color: var(--color-slate-900);
+    text-align: center;
+    align-content: center;
+    height: 95vh;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-light);
+}
+
+img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 7px;
+    border: 5px groove var(--color-lightblue);
+}
+
+.texto {
+    color: var(--color-light);
+    font-size: large;
+    background-color: cadetblue;
+    max-width: 250px;
+    min-height: 150px;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.display{
+    display: inline-block;
+}
+
+.lightblue{
+    background-color: var(--color-lightblue);
+}

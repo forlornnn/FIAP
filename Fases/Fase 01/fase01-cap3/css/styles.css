@@ -1,0 +1,57 @@
+/* CTRL + ; */
+/*mudando a cara do site*/
+body{
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 16px;
+}
+h1{
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+    color:crimson;
+}
+h2{
+    font-size: x-large;
+    font-weight: 600;
+    color: crimson;
+}
+p{
+    color:dimgray;
+}
+li{
+    color: dimgray;
+    font-weight: 800;
+}
+.container-um{
+    background-color: crimson;
+    width: 500px;
+    height: 100%;  
+}
+.container-dois{
+    background-color: darkred;
+    width: 50%;
+    height: 100%;
+}
+.p1 {
+    color: white;
+    margin: 0;
+}
+.p2 {  
+    color: white;
+}
+.h1-medidas{
+    color: crimson;
+    text-align: left;
+}
+.p-medidas{
+    color: black;
+    font-size: 5dvh;
+}
+.container-tres{
+    background-color: bisque;
+    height: 100dvh;
+}
+.box{
+    width: 50vmax;
+    background-color: #dedede;
+}
