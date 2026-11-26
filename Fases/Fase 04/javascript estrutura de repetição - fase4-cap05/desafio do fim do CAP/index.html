@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Fim do CAP</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #botoes {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            min-width: 100px;
+            min-height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #botao-azul {
+            background-color: blue;
+            color: white;
+        }
+        #botao-verde {
+            background-color: green;
+            color: white;
+        }
+        #botao-amarelo {
+            background-color: yellow;
+            color: black;
+        }
+        #botao-vermelho {
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--
+Crie um script que tenha um campo para quando o usuário escrever em um campo do tipo input, o texto que estiver escrevendo seja reproduzido no título da página, criado com uma tag “h1”. Ao final, que ele tenha 4 botões escritas as cores “azul”, “verde”, “amarelo” e “vermelho”. Se o usuário clicar nos botões, muda a cor do texto para as cores título dos botões. Após ele escolher a cor do texto, se ele passar o mouse sobre o parágrafo, que seja aberto na tela um “Alert” informando o nome da cor escolhida.
+-->
+
+
+    <!-- container dos botões e do parágrafo que ativa o alert -->
+    <div id="botoes">
+
+        <p>Escolha a cor do texto:</p>
+        <button onclick="mudarCor('blue')" id="botao-azul">Azul</button>
+        <button onclick="mudarCor('green')" id="botao-verde">Verde</button>
+        <button onclick="mudarCor('yellow')" id="botao-amarelo">Amarelo</button>
+        <button onclick="mudarCor('red')" id="botao-vermelho">Vermelho</button>
+
+    </div>
+
+
+    <h1>Digite algo no campo abaixo</h1>
+    <!-- campo de entrada para o usuário pro moço escrever -->
+    <input type="text" placeholder="Digite aqui...">
+
+    <script>
+        // variaveis para selecionar os elementos do DOM, o querySelector é mais moderno e flexível que o getElementById, mas os dois funcionam, mas oq eles fazem é selecionar elementos do DOM, ou seja, elementos da página HTML, para que possamos manipular eles com o JS pelo id ou pela tag, no caso do querySelector, ele seleciona o primeiro elemento que encontrar com a tag especificada, no caso o h1, input e p
+        var h1 = document.querySelector("h1");
+        var input = document.querySelector("input");
+        var paragrafo = document.querySelector("p");
+
+        // adicionando um evento de input no campo de entrada, que é disparado toda vez que o usuário digita algo no campo, e dentro da função anônima aquela função "function ()", estamos alterando o texto do h1 para o valor do input, ou seja, o que o usuário está digitando
+        input.addEventListener("input", function () {
+            h1.textContent = input.value;
+        });
+
+        // função para mudar a cor do texto do h1, que é chamada quando o usuário clica em um dos botões, passando a cor como parâmetro
+        function mudarCor(cor) {
+            // aqui estamos alterando a cor do texto do h1 para a cor passada como parâmetro
+            h1.style.color = cor;
+        }
+
+        // adicionando um evento de mouseover no parágrafo, que é disparado quando o usuário passa o mouse sobre o parágrafo, e dentro da função anônima estamos exibindo um alert com a cor do texto do h1
+        paragrafo.addEventListener("mouseover", function () {
+            // aqui estamos exibindo um alert com a cor do texto do h1, que só possivel pois acessa o styles.color 
+            alert("A cor escolhida é: " + h1.style.color);
+        });
+    </script>
+
+</body>
+
+</html>

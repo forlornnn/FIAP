@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura com FOR</title>
+</head>
+<body>
+
+    <script> 
+
+        // var numero = Number(prompt("Digite um número para calcular a tabuada:"));
+
+        // for(var i = 1; i <= 10; i++){
+        //     console.log(`${numero} x ${i} = ${numero * i}`);
+        // }
+
+
+        // as voltas de fora aqui, vai escolher qual tabuada será calculada, e a volta de dentro vai calcular a tabuada do número escolhido.
+        for(var i = 1; i <= 10; i++){
+            console.log(`Tabuada do ${i}:`);
+            // volta de dentro, que vai calcular a tabuada do número escolhido na volta de fora.
+            // enquanto esse for n terminar as 10 voltas, ele vai continuar calculando a tabuada do número escolhido na volta de fora.
+            for(var j = 1; j <= 10; j++){
+                // usa o valor da volta de fora (ex. 1) e o valor da volta de dentro (ex. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10) para calcular a tabuada do número escolhido na volta de fora.
+                console.log(`${i} x ${j} = ${i * j}`);
+                // quando o "j" chegar a 11, ele vai sair do for de dentro e voltar para o for de fora, o "i" ganha uma volta e assim ate o 10.
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

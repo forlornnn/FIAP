@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-WHILE</title>
+</head>
+
+<body>
+
+    <script>
+        // array = [] sempre começa com 0, é uma array pq ele tirou primeiro 10 dps 9 dps 8 dps 7, imaginando um aluno tirando essas notas
+        var notas = [10, 9, 8, 7];
+        // cria uma volta (gosto de chamar assim), um contador que vai navegar pelas posições do array 
+        var index = 0;
+        // um acumulador que vai somar as notas, para depois fazer a media
+        var somaNotas = 0;
+
+        // DO-WHILE, DO = FAÇA, a diferença do while é que ele vai executar o bloco de código pelo menos uma vez, mesmo que a condição seja falsa, e depois ele vai verificar a condição, se for verdadeira ele vai continuar executando o bloco de código, se for falsa ele vai sair do loop
+        do {
+            // coloca + 1 pq array sempre começa com 0 (isso pra ficar facil pra nois vermos)
+            console.log(`A nota do ${index + 1}º bimestre é: ${notas[index]}`);
+            // mas pegamos o valor real usando notas[index]
+            somaNotas += notas[index];
+            // usei o incremento aqui pq ele vai somar 1 a cada "volta" que ele der, e assim ele vai navegar pelas posições do array, indo pra proxima volta, e assim por diante, até que a condição seja falsa (pra que seja falsa ele tem que ser menor que o tamanho do array, que é 4, então ele vai parar quando index for 4, pq o array tem 4 posições, 0, 1, 2 e 3)
+            index++;
+        } while (index < notas.length);
+            // aqui n tem segredo é so a conta da media 
+        console.log(`A media das notas é: ${somaNotas / notas.length}`);
+
+    </script>
+
+</body>
+
+</html>

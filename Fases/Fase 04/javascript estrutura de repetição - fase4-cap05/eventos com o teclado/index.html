@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com o Teclado</title>
+
+    <!-- css rapido -->
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            color:brown;
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div">
+        <h2>Letra digitada: <span id="letra"></span></h2>
+        <input type="text" id="texto">
+    </div>
+
+    <script>
+        var letra = document.getElementById("letra")
+        var texto = document.getElementById("texto")
+        texto.addEventListener('keydown', apagar)
+        texto.addEventListener('keyup', escrever)
+
+        function apagar() {
+            letra.innerHTML = ""
+            texto.value = ""
+        }
+
+        function escrever() {
+            letra.innerHTML = texto.value
+        }
+    </script>
+    
+
+</body>
+
+</html>
